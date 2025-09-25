@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Maa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Background Music -->
+<audio id="bg-music" src="c:\Users\Windows\Desktop\Apps\desktop\happy birthday code\project birthday\1021.mp3" autoplay loop></audio>
+<button class="music-btn" onclick="toggleMusic()">🔊 Play/Pause Music</button>
+
+    <!-- Balloons Container -->
+<div class="balloons">
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+</div>
+
+<!-- Bubbles Container -->
+<div class="bubbles">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+
+ 
+  <!-- Start Page -->
+  <div id="start" class="page active">
+    <h1>Happy Birthday Maa ❤️ </h1>
+    <div><img src="6.jpg" alt="" width="300" height="400"></div>
+    <button onclick="nextPage()">Begin the Journey</button>
+  </div>
+ 
+  <!-- Memories Intro Page -->
+  <div id="memoriesIntro" class="page">
+    <h1>Are you ready? 💞</h1>
+    <p>Let’s recall our precious memories together!</p>
+    <button onclick="nextPage()">Let’s Recall the Memories Together 📸</button>
+  </div>
+
+  <!-- Memories Page -->
+  <div id="memories" class="page">
+     <h1>Our Memories Together 📸</h1>
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src="1.jpg" alt="Memory 1"></div>
+      <div class="slide"><img src="2.jpg" alt="Memory 2"></div>
+      <div class="slide"><img src="3.jpg" alt="Memory 3"></div>
+      <div class="slide"><img src="4.jpg" alt="Memory 4"></div>
+      <div class="slide"><img src="5.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="9.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="10.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="11.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="12.jpg" alt="Memory 5"></div>
+      <!-- Duplicate the slides for seamless looping -->
+      <div class="slide"><img src="1.jpg" alt="Memory 1"></div>
+      <div class="slide"><img src="2.jpg" alt="Memory 2"></div>
+      <div class="slide"><img src="3.jpg" alt="Memory 3"></div>
+      <div class="slide"><img src="4.jpg" alt="Memory 4"></div>
+      <div class="slide"><img src="5.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="9.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="10.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="11.jpg" alt="Memory 5"></div>
+      <div class="slide"><img src="12.jpg" alt="Memory 5"></div>
+
+    </div>
+  </div>
+    <button onclick="nextPage()">Let's Cut the Cake 🎂</button>
+  </div>
+
+ 
+  <!-- Cake Cutting Page -->
+<div id="cake" class="page">
+  <h1>Time to Cut the Cake! 🎂</h1>
+  <div class="cake-wrapper">
+    <img src="pngwing.com.png" alt="Cake" class="cake" id="cake-img"/>
+    <img src="https://cdn-icons-png.flaticon.com/512/685/685352.png" alt="Knife" class="knife" id="knife"/>
+  </div>
+  <button id="cut-btn" onclick="cutCake()">Cut the Cake 🎂</button>
+  <button id="lighten-btn" onclick="nextPage()" style="display:none;">Lighten Up ✨</button>
+</div>
+
+
+  <!-- Lighten Up Page -->
+  <div id="lightenup" class="page">
+    <h1>Let’s Lighten Up! 🎉</h1>
+    <div class="lights"></div>
+    <button onclick="nextPage()">Read the Letter 💌</button>
+  </div>
+
+  <!-- Final Letter Page -->
+  <div id="letter" class="page">
+    <h1>Happy Birthday! 🎂</h1>
+    <p>
+      "Maa, on your special day, I want to tell you how deeply grateful I am for your endless love, sacrifices, and guidance. You are my first teacher, my safe haven, and my constant inspiration. Every smile, every hug, every word of yours has shaped the person I am today. I pray that life blesses you with the same joy, love, and warmth that you have always given me. Happy Birthday to the most precious person in my life – my Maa. You are my everything, today and always."
+    </p>
+    
+    <p>তুমি নরম ফুলের গান ।
+তুমি গরম ভাতের ভাঁপ ।
+তুমি অভিমানের চুপ ।
+তুমি কান্না জমা মুখ ।
+
+আমি তোমার ছায়ায় ছায়ায়
+থাকি, মা।
+আমি তোমার চোখের তারায়,
+বাঁচি, মা ।
+আমি তোমার মায়ায় মায়ায়,
+থাকি মা ।
+আমি তোমায় হাওয়ায় আবার
+ডাকি মা ।
+আমি তোমায় ভালোবাসায় মুড়ে
+রাখি, মা ।💕
+    </p>
+    <p>Enjoy Your Day,MAA</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
